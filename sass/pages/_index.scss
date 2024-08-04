@@ -1,0 +1,87 @@
+.section-cards {
+  background-color: #f1f2f3;
+  padding: 1rem;
+}
+
+.search-bar__form-submit,
+.search-bar__carrito-container,
+.cart-btn {
+  cursor: pointer;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* -------------------------------------------------------- */
+/* PERSONALIZADO */
+/* -------------------------------------------------------- */
+.img-top {
+  text-align: center;
+
+  & img {
+    width: 80%;
+    border-radius: 20%;
+    box-shadow: 3px;
+    border: 1px solid $color-secondary;
+  }
+}
+
+.card {
+  margin: 5px;
+}
+
+.section-cards {
+  &__header {
+    color: $color-secondary;
+    padding: 1rem;
+
+    & h1 {
+      text-align: center;
+      font-weight: 300;
+      padding-top: 1rem;
+      font-variant: small-caps;
+      color: $color-primary;
+      font-size: 2em;
+    }
+
+    & h2,
+    p {
+      font-weight: 100;
+      padding-top: 1rem;
+      font-size: 1.2em;
+      padding-left: 3rem;
+      text-decoration: underline;
+    }
+
+    & p {
+      font-size: 1em;
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+
+  .cards-container {
+    padding-inline: 1rem;
+    color: $color-secondary;
+    font-weight: 200;
+    font-variant: small-caps;
+
+    .card__content {
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+  }
+
+  .card__description {
+    color: $color-primary;
+    font-weight: 100;
+  }
+}
+
+html {
+  padding-bottom: 1.5rem;
+}

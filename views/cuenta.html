@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>Tu cuenta</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <input type="checkbox" id="menu">
+
+      <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="../index.html" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item alta">
+            <a href="#" class="nav-bar__nav-link alta">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="./contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="./cuenta.html" class="nav-bar__nav-link">Ingreso/Registro</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-bar -->
+
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <img src="../img/logo-color-bg-transparent.svg" class="search-bar__logo-container__image" alt="logo">
+        </div>
+        <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label">Toyland</label>
+          <input type="search" class="search-bar__form-search" id="busqueda" placeholder="¿Qué estás buscando?">
+          <input type="submit" class="search-bar__form-submit" value="Buscar">
+        </form>
+        <div class="search-bar__carrito-container"><img src="../img/cart.svg" alt="carrito"></div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div>
+      </div>
+      <!-- .search-bar -->
+    </header>
+    <!-- main-header -->
+
+    <!-- sección ingreso/cuenta -->
+    <div class="section-login">
+      <div class="section-login__info">
+        <form action="http://localhost:8080/login" class="login" method="post" target="_blank">
+          <div><img src="../img/logo-color-bg-transparent.svg" alt="logo"></div>
+          <fieldset>
+            <legend>Inicia sesión en Toyland</legend>
+            <div class="section-login__login">
+              <div>
+                <div class="lbl-user">
+                  <label for="user">Usuario</label>
+                </div>
+                <input id="user" name="user" type="text" placeholder="Nombre de usuario/Email" required>
+              </div>
+              <div>
+                <div class="pass">
+                  <label for="password" class="lbl-pass">Contraseña</label>
+                  <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                <input id="password" name="password" type="text" placeholder="Contraseña" required>
+              </div>
+              <div class="login__button">
+                <button>Enviar</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="section-registro">
+        <form action="" class="section-registro__form">
+          <fieldset class="registro">
+            <legend >Regístrate</legend>
+            <div class="registro__username">
+              <div class="lbl"><label for="name">Nombre de usuario: *</label></div>
+              <div><input type="text" id="name" name="name" placeholder="Nombre de usuario" required></div>
+            </div>
+            <div class="registro__email">
+              <div class="lbl"><label for="mail">Email: *</label></div>
+              <div><input type="email" id="mail" name="mail" placeholder="Correo Electrónico" required></div>
+            </div>
+            <div class="registro__button">
+              <button>Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="contact3">
+          <img src="../img/buzz.webp" alt="buzz">
+        </div>
+      </div>
+      <!-- FIN FORMULARIO -->
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="section-about-us__content footer-top">
+        <p>Para servicio al cliente, por favor <a href="./contacto.html">contáctenos.</a></p>
+        <div class="logo-cont">
+          <img src="../img/logo-color-bg-transparent.svg" class="logo" alt="logo">
+        </div>
+        <div class="icon">
+          <p class="icon__text">Síguenos</p>
+          <div class="icon__cont">
+            <a href="https://www.facebook.com/" class="icon__link" target="_blank"
+              ><img src="../img/facebook.svg" alt="facebook"
+          ></a>
+            <a href="https://x.com/?lang=es" class="icon__link" target="_blank"
+              ><img src="../img/x.svg" alt="Twitter"
+          ></a>
+            <a href="https://www.instagram.com/" class="icon__link" target="_blank"
+              ><img src="../img/instagram.svg" alt="instagram"
+          ></a>
+            <a href="https://www.youtube.com/" class="icon__link" target="_blank"
+              ><img src="../img/youtube.svg" alt="youtube"
+          ></a>
+            <a href="#" class="icon__link" target="_blank"><img src="../img/location.svg" alt="ubicacion"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-fixed">Copyright 2024 - WC2 - willconde2@hotmail.com</div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

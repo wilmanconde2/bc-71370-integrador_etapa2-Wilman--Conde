@@ -1,0 +1,205 @@
+.section-contact-us {
+  &__info {
+    display: grid;
+    text-align: center;
+    color: $color-secondary;
+    padding-bottom: 1.5rem;
+
+    img {
+      width: 35px;
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+
+    em {
+      color: $color-primary;
+    }
+
+    .contact1__title {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__form {
+    padding-inline: 10px;
+
+    .contact {
+      display: grid;
+      padding: 0.5rem;
+      background-color: rgba(66, 103, 178, 0.03);
+      color: $color-secondary;
+
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+        color: $color-secondary;
+      }
+
+      input::placeholder {
+        font-style: italic;
+        font-size: 0.8em;
+      }
+
+      fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 1/3;
+        border: none;
+        color: $color-secondary;
+      }
+
+      legend {
+        padding: 2rem;
+        font-size: 1.5em;
+      }
+
+      &__name {
+        grid-column: 1/2;
+        padding-inline: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      &__email {
+        grid-column: 2/3;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      &__subject {
+        grid-column: 1/3;
+        padding-inline: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      &__message {
+        grid-column: 1/3;
+        padding-inline: 2rem;
+        padding-bottom: 1rem;
+
+        textarea {
+          width: 100%;
+          height: 4rem;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+          resize: none;
+        }
+
+        textarea::placeholder {
+          font-style: italic;
+        }
+      }
+
+      &__button {
+        grid-column: 1/1;
+        padding-inline: 2rem;
+
+        button {
+          font-family: $font-primary;
+          background-color: $color-primary;
+          color: $color-secondary;
+          padding: 5px;
+          padding-inline: 10px;
+          border-radius: 10px;
+          border: none;
+          color: whitesmoke;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .contact3 {
+      background-color: rgba(66, 103, 178, 0.03);
+      padding: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // ! ----------------breakpoint-----------------
+  // ! -------------------------------------------
+
+  @media (min-width: 576px) {
+    & {
+      //section-contact-us
+      display: grid;
+
+      &__info {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding-bottom: 3rem;
+        padding-inline: 12vw;
+        width: 100%;
+        flex-shrink: 1;
+
+        img {
+          width: 55px;
+        }
+
+        .contact1__title {
+          grid-column: 1/5;
+          font-size: 2em;
+          padding-bottom: 2rem;
+        }
+      }
+
+      &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 5vw;
+        padding-bottom: 2rem;
+
+        .contact {
+          border-radius: 0;
+          min-width: 270px;
+
+          legend {
+            text-align: center;
+          }
+
+          &__name {
+            grid-column: 1/2;
+            padding-inline: 1rem;
+            padding-bottom: 1rem;
+          }
+
+          &__email {
+            grid-column: 2/3;
+            padding-inline: 1rem;
+            padding-bottom: 1rem;
+          }
+
+          &__subject {
+            grid-column: 1/3;
+            padding-inline: 1rem;
+            padding-bottom: 1rem;
+          }
+
+          &__message {
+            grid-column: 1/3;
+            padding-inline: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+
+        .contact3 {
+          align-self: center;
+          text-align: center;
+          background-color: rgba(66, 103, 178, 0.03);
+          padding: 2rem;
+
+          img {
+            min-width: 35vw;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

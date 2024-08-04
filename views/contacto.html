@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo-color-bg-transparent.ico">
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <input type="checkbox" id="menu">
+
+      <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="../index.html" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item alta">
+            <a href="#" class="nav-bar__nav-link alta">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="./nosotros.html" class="nav-bar__nav-link">nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="./contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="./cuenta.html" class="nav-bar__nav-link">Ingreso/Registro</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-bar -->
+
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <img src="../img/logo-color-bg-transparent.svg" class="search-bar__logo-container__image" alt="logo">
+        </div>
+        <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label">Toyland</label>
+          <input type="search" class="search-bar__form-search" id="busqueda" placeholder="¿Qué estás buscando?">
+          <input type="submit" class="search-bar__form-submit" value="Buscar">
+        </form>
+        <div class="search-bar__carrito-container"><img src="../img/cart.svg" alt="carrito"></div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div>
+      </div>
+      <!-- .search-bar -->
+    </header>
+    <!-- main-header -->
+
+    <!-- sección contáctenos -->
+    <section class="section-contact-us">
+      <div class="section-contact-us__info contact1">
+        <div class="contact1__title"><h1>Toyland</h1></div>
+        <div>
+          <a href="#"><img src="../img/location.png" alt="address"></a>
+          <p>Dirección: <em>Calle Goku # 38 - 20</em></p>
+        </div>
+        <div>
+          <a href="#"><img src="../img/phone.png" alt="phone"></a>
+          <p>Teléfono: <em>+123456789</em></p>
+        </div>
+        <div>
+          <a href="#"><img src="../img/email.png" alt="mail"></a>
+          <p>Email: <em>info.toyland@juegos.com</em></p>
+        </div>
+        <div>
+          <a href="#"><img src="../img/website.png" alt="website"></a>
+          <p>Website: <em>https.toyland.com</em></p>
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="section-contact-us__form">
+        <form action="" class="contact">
+          <fieldset>
+            <legend>Contáctenos</legend>
+            <div class="contact__name">
+              <div><label for="name">Nombre: *</label></div>
+              <div><input type="text" id="name" name="name" placeholder="Nombre" required></div>
+            </div>
+            <div class="contact__email">
+              <div><label for="mail">Email: *</label></div>
+              <div><input type="email" id="mail" name="mail" placeholder="Correo Electrónico" required></div>
+            </div>
+            <div class="contact__subject">
+              <div><label for="subject">Asunto: *</label></div>
+              <div><input type="text" id="subject" name="subject" placeholder="Asunto" required></div>
+            </div>
+            <div class="contact__message">
+              <div><label for="message">Mensaje: *</label></div>
+              <div><textarea id="message" name="message" placeholder="Deseo saber más sobre..." required></textarea></div>
+            </div>
+            <div class="contact__button">
+              <button>Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="section-contact-us__img contact3">
+          <img src="../img/buzz.webp" alt="buzz">
+        </div>
+      </div>
+      <!-- FIN FORMULARIO -->
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="section-about-us__content footer-top">
+        <p>Daremos respuesta a tu solicitud en el menor tiempo posible!</p>
+        <div class="logo-cont">
+          <img src="../img/logo-color-bg-transparent.svg" class="logo" alt="logo">
+        </div>
+        <div class="icon">
+          <p class="icon__text">Síguenos</p>
+          <div class="icon__cont">
+            <a href="https://www.facebook.com/" class="icon__link" target="_blank"
+              ><img src="../img/facebook.svg" alt="facebook"
+          ></a>
+            <a href="https://x.com/?lang=es" class="icon__link" target="_blank"
+              ><img src="../img/x.svg" alt="Twitter"
+          ></a>
+            <a href="https://www.instagram.com/" class="icon__link" target="_blank"
+              ><img src="../img/instagram.svg" alt="instagram"
+          ></a>
+            <a href="https://www.youtube.com/" class="icon__link" target="_blank"
+              ><img src="../img/youtube.svg" alt="youtube"
+          ></a>
+            <a href="#" class="icon__link" target="_blank"><img src="../img/location.svg" alt="ubicacion"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-fixed">Copyright 2024 - WC2 - willconde2@hotmail.com</div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

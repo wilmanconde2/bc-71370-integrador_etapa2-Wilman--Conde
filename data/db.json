@@ -1,0 +1,54 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Batman",
+      "foto": "../img/batman.webp",
+      "categoria": "DC toy",
+      "precio": 222.2
+    },
+    {
+      "id": 2,
+      "nombre": "Batmobile",
+      "foto": "../img/batmobile.webp",
+      "categoria": "DC toy",
+      "precio": 333.3
+    },
+    {
+      "id": 3,
+      "nombre": "Darth Vader",
+      "foto": "../img/darth-vader.webp",
+      "categoria": "Lego",
+      "precio": 444.4
+    },
+    {
+      "id": 4,
+      "nombre": "McLaren F1",
+      "foto": "../img/mclaren-f1.webp",
+      "categoria": "Lego",
+      "precio": 555.5
+    },
+    {
+      "id": 5,
+      "nombre": "Porsche 911",
+      "foto": "../img/porsche911.webp",
+      "categoria": "Lego",
+      "precio": 666.6
+    },
+    {
+      "id": 6,
+      "nombre": "R2D2",
+      "foto": "../img/r2d2.webp",
+      "categoria": "Lego",
+      "precio": 777.7
+    },
+    {
+      "id": 7,
+      "nombre":  "Looney Tunes",
+      "foto": "../img/looney-toons.webp",
+      "categoria": "WB Toy",
+      "precio": 111.1
+    }
+    
+  ]
+}

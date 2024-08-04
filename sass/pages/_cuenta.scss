@@ -1,0 +1,164 @@
+.section-login {
+  display: grid;
+  padding-top: 1rem;
+  justify-items: center;
+
+  &__login {
+    background-color: rgba(66, 103, 178, 0.02);
+    border-radius: 15px;
+    border: 1px solid grey;
+  }
+
+  img {
+    width: 55px;
+  }
+
+  &__info {
+    color: $color-secondary;
+    display: grid;
+    grid-template-columns: 300px;
+    text-align: center;
+    justify-self: center;
+
+    fieldset {
+      border: none;
+
+      legend {
+        padding: 1rem;
+        font-size: 1.5em;
+      }
+
+      .lbl-user {
+        padding: 1rem;
+      }
+
+      .pass {
+        padding: 1rem;
+      }
+
+      .lbl-pass {
+        display: inline;
+      }
+
+      a {
+        display: inline;
+        font-size: 0.5em;
+        padding-inline: 1rem;
+      }
+
+      input {
+        width: 80%;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+        color: $color-secondary;
+      }
+
+      input::placeholder {
+        font-style: italic;
+        text-align: center;
+      }
+
+      .login__button {
+        padding: 1rem;
+      }
+
+      button {
+        font-family: $font-primary;
+        background-color: $color-primary;
+        padding: 5px;
+        padding-inline: 10px;
+        border-radius: 10px;
+        border: none;
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .section-registro {
+    min-width: 300px;
+    width: 60%;
+
+    &__form {
+      padding-top: 1rem;
+
+      .registro {
+        display: grid;
+        padding: 0.5rem;
+        border: 1px solid grey;
+        border-radius: 15px;
+        text-align: center;
+        background-color: rgba(66, 103, 178, 0.03);
+        color: $color-secondary;
+
+        legend {
+          padding-inline: 0.5rem;
+          font-size: 1.5em;
+        }
+
+        .lbl {
+          padding-bottom: 1rem;
+        }
+
+        input {
+          width: 80%;
+          border: none;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+          color: $color-secondary;
+        }
+
+        input::placeholder {
+          font-style: italic;
+          text-align: center;
+        }
+
+        &__username {
+          grid-column: 1/3;
+          padding-inline: 2rem;
+          padding-bottom: 1rem;
+        }
+
+        &__email {
+          grid-column: 1/3;
+          padding-right: 2rem;
+          padding-bottom: 1rem;
+        }
+
+        &__button {
+          grid-column: 1/3;
+          padding-inline: 2rem;
+
+          button {
+            font-family: $font-primary;
+            background-color: $color-primary;
+            color: $color-secondary;
+            padding: 5px;
+            padding-inline: 10px;
+            border-radius: 10px;
+            border: none;
+            color: whitesmoke;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .contact3 {
+      padding: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // ! ----------------breakpoint-----------------
+  // ! -------------------------------------------
+
+  @media (min-width: 576px) {
+    .section-registro {
+      max-width: 570px;
+    }
+  }
+}
