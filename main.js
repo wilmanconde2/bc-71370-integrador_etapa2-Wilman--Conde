@@ -15,9 +15,9 @@ window.addEventListener('DOMContentLoaded', async function () {
     template({ plantilla: plantilla });
     
     // ! local host db.json
-    const respuestaBackend = await fetch('  http://localhost:8080/productos');  
+    // const respuestaBackend = await fetch('  http://localhost:8080/productos');  
     // ! mock api endpoint
-    // const respuestaBackend = await fetch(import.meta.env.VITE_API_KEY);  
+    const respuestaBackend = await fetch(import.meta.env.VITE_API_KEY);  
     if (!respuestaBackend.ok) {
       throw new Error('Algo paso con los productos', respuestaBackend.status);
     }
