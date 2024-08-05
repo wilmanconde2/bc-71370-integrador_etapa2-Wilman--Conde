@@ -2,6 +2,7 @@ import './sass/main.scss';
 import Handlebars from 'handlebars';
 
 window.addEventListener('DOMContentLoaded', async function () {
+  const url = import.meta.env.VITE_API_KEY;
   try {
     const respuesta = await fetch('templates/card.hbs');
     if (!respuesta.ok) {
@@ -13,11 +14,11 @@ window.addEventListener('DOMContentLoaded', async function () {
     const template = Handlebars.compile(plantilla);
 
     template({ plantilla: plantilla });
-    
+
     // ! local host db.json
-    // const respuestaBackend = await fetch('  http://localhost:8080/productos');  
+    // const respuestaBackend = await fetch('  http://localhost:8080/productos');
     // ! mock api endpoint
-    const respuestaBackend = await fetch(import.meta.env.VITE_API_KEY);  
+    const respuestaBackend = await fetch(url);
     if (!respuestaBackend.ok) {
       throw new Error('Algo paso con los productos', respuestaBackend.status);
     }
@@ -37,6 +38,3 @@ window.addEventListener('DOMContentLoaded', async function () {
     console.error('Error:', error);
   }
 });
-
-
-
